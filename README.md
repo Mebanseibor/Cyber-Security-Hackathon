@@ -1,21 +1,22 @@
-# Cyber-Security Hackethon
+# Cyber-Security Hackathon
 `ReadMe Last updated on: 2024/07/04 (YYYY/MM/DD)`
 
 ## Table of Content
 | Content                                                       |
 | ---                                                           |
-| [Introduction](#Content_Introduction)                         |
-| 🧭[Repository Navigation](#Content_RepositoryNavigation)      |
+| [Introduction](#content-introduction)                         |
+| 🧭[Repository Navigation](#content-repositorynavigation)      |
+| 🦮[Guidance](#content-guidance)                               |
 
 ---
-## <p id = "Content_Introduction">Introduction</p>
-This is a Repository that will contain all the resources and assets for the Cyber-Security Hackethon `Coolness` hosted by the `Department of Coolness` of the `College of Coolness, Shillong, Meghalaya`
+## <p id = "content-introduction">Introduction</p>
+This is a Repository that will contain all the resources and assets for the Cyber-Security Hackathon `Coolness` hosted by the `Department of Coolness` of the `College of Coolness, Shillong, Meghalaya`
 
 
 
 
 ---
-## <p id = "Content_RepositoryNavigation">Repository Navigation🧭</p>
+## <p id = "content-repositorynavigation">Repository Navigation🧭</p>
 ### [Challenges🪨][DirectoryLink Challenges]
 - #### OSINT
 - #### Digital Forensics
@@ -24,19 +25,14 @@ This is a Repository that will contain all the resources and assets for the Cybe
 - #### [Entry Requirement][DirectoryLink EntryRequirement]
 - #### [Adding Challenges][DirectoryLink AddingChallenges]
 - #### [Repository][DirectoryLink_Repository]
-### [Hackethon Management💼][DirectoryLink HackethonManagement]
+### [Hackathon Management💼][DirectoryLink HackethonManagement]
 
 
 
-
-
-
-
-
-
-
-
-
+---
+## <p id="content-guidance">Guidance🦮</p>
+### Over-View
+- By [Hackerearth][WebLink Hackerearth_HowToOrganizeAHackathon]
 
 
 
@@ -58,4 +54,7 @@ This is a Repository that will contain all the resources and assets for the Cybe
 [DirectoryLink_Repository]: ./Rules%20and%20Regulations/Repository.md
 
 <!--Folder: docs-->
-[DirectoryLink HackethonManagement]: ./docs/Hackethon%20Management.md
+[DirectoryLink HackethonManagement]: ./docs/Hackathon%20Management.md
+
+<!--Guidance Links-->
+[WebLink Hackerearth_HowToOrganizeAHackathon]: https://www.hackerearth.com/community-hackathons/resources/e-books/guide-to-organize-hackathon/
