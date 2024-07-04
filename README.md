@@ -5,7 +5,7 @@
 | Content                                                       |
 | ---                                                           |
 | [Introduction](#Content_Introduction)                         |
-| [🧭Repository Navigation](#Content_RepositoryNavigation)      |
+| 🧭[Repository Navigation](#Content_RepositoryNavigation)      |
 
 ---
 ## <p id = "Content_Introduction">Introduction</p>
