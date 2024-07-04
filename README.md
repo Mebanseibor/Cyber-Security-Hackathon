@@ -23,6 +23,7 @@ This is a Repository that will contain all the resources and assets for the Cybe
 ### [Rules and Regulations⚖️][DirectoryLink RulesAndRegulations]
 - #### [Entry Requirement][DirectoryLink EntryRequirement]
 - #### [Adding Challenges][DirectoryLink AddingChallenges]
+- #### [Repository][DirectoryLink_Repository]
 ### [Hackethon Management💼][DirectoryLink HackethonManagement]
 
 
@@ -54,6 +55,7 @@ This is a Repository that will contain all the resources and assets for the Cybe
 [DirectoryLink RulesAndRegulations]: ./Rules%20and%20Regulations/
 [DirectoryLink EntryRequirement]: ./Rules%20and%20Regulations/Entry%20Requirement.md
 [DirectoryLink AddingChallenges]: ./Rules%20and%20Regulations/Adding%20Challenges.md
+[DirectoryLink_Repository]: ./Rules%20and%20Regulations/Repository.md
 
 <!--Folder: docs-->
 [DirectoryLink HackethonManagement]: ./docs/Hackethon%20Management.md
