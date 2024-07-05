@@ -3,7 +3,7 @@
 
 
 
----
+
 ## Acceptable Challenges
 - The language to be used for the challenges must be in English, except if the particular challenge demands otherwise
 - The expected time for completing the challenge should be reasonable
