@@ -37,9 +37,9 @@ This is a Repository that will contain all the resources and assets for the Cybe
 ### Table of Content
 | Content                                               |
 | ---                                                   |
-| [🦅Birds Eye View](#mermaid-birdseyeview)
-| [🛠️Creating Challenges](#mermaid-creatingchallenges)    |
-### <p id="mermaid-birdseyeview">Birds Eye View🦅</p>
+| 🦅[Birds Eye View](#mermaid-birdseyeview)
+| 🛠️[Creating Challenges](#mermaid-creatingchallenges)    |
+### <p id="mermaid-birdseyeview">Birds Eye View🦅:</p>
 ```mermaid
 graph TB
     %%Node definition
@@ -68,7 +68,7 @@ graph TB
 ```
 
 
-### <p id="mermaid-creatingchallenges">Creating Challenges🛠️</p>
+### <p id="mermaid-creatingchallenges">Creating Challenges🛠️:</p>
 
 ```mermaid
 graph TB
