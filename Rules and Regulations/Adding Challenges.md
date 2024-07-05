@@ -1,3 +1,4 @@
+
 # Adding Challenges
 
 
@@ -18,6 +19,7 @@
 ---
 ## Components of a challenge
 A Challenge **MUST** include:
+- Designer's GUID
 - Name
 - Category
 - Precieved Difficulty

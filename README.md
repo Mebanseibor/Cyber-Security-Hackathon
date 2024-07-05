@@ -34,25 +34,41 @@ This is a Repository that will contain all the resources and assets for the Cybe
 
 ---
 ## <p id="content-hackathonflowchart">Hackathon FlowChart</p>
-### Over-view
+### Table of Content
+| Content                                               |
+| ---                                                   |
+| [🦅Birds Eye View](#mermaid-birdseyeview)
+| [🛠️Creating Challenges](#mermaid-creatingchallenges)    |
+### <p id="mermaid-birdseyeview">Birds Eye View🦅</p>
 ```mermaid
 graph TB
     %%Node definition
+    PC[Proposal Creation]
+    PU[Proposal Update]
+    PD[Proposal Documentation]
     FA[Feasibility Analysis📊]
+    PO[Parent Organization🏢]
     TF[Teams Formation👥]
-    CC[<a href="#mermaid-creatingchallenges">Create Challenges</a>🛠️]
+    CC[Create Challenges🛠️]
     AE[Advertise Event📰]
 
 
     %%Node Connection
-    FA-->TF
+    
+    PC-->FA
+    FA-->PD[Compile proposal documentation📝]
+    PD-->PO{Parent Organisation<br>evaluates hackathon proposal}
+    %% Parent Organisation
+        PO--Approved🟢-->TF
+        PO--Rejected🔴-->PU[Update Proposal]
+    PU-->FA
     TF-->CC
     CC-->AE
 
 ```
 
 
-### <p id="mermaid-creatingchallenges">Creating Challenges</p>
+### <p id="mermaid-creatingchallenges">Creating Challenges🛠️</p>
 
 ```mermaid
 graph TB
@@ -65,17 +81,17 @@ graph TB
         PT[Play Test]
         PTR{Play Test Result}
 
-    CC[Create a Challenge]-->FG[Apply predefined rules<br>on challenge creation]
+    CC[Create a new Challenge]-->FG[Apply predefined rules<br>on challenge creation]
     FG-->CA{The Council<br>evaluates the Challenge}
 
     %%Challenge Acceptance
         CA--Accepted🟢--->PT
-        CA--Refected🔴-->CC
+        CA--Rejected🔴-->CC
         CA--Changes Needed🟡-->CU[Update the Challenge]
         CU-->FG
     
     %%Play Test
-    PT[A diverse dontrol group<br>play tests the challenge]-->PTR
+    PT[A diverse play testers<br>play tests the challenge]-->PTR{Result of Play Test}
     PTR--Positive🟢-->AC
     PTR--Negative🔴-->CA
 
