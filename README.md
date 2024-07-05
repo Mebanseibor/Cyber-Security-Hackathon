@@ -43,57 +43,55 @@ This is a Repository that will contain all the resources and assets for the Cybe
 ```mermaid
 graph TB
     %%Node definition
-    PC[Proposal Creation]
-    PU[Proposal Update]
-    PD[Proposal Documentation]
-    FA[Feasibility Analysis📊]
-    PO[Parent Organization🏢]
-    TF[Teams Formation👥]
-    CC[Create Challenges🛠️]
-    AE[Advertise Event📰]
+    ProposalCreation[Proposal Creation]
+    ProposalUpdate[Proposal Update]
+    ProposalDocumentation[Proposal Documentation]
+    FeasibilityAnalysis[Feasibility Analysis📊]
+    ParentOrganization[Parent Organization🏢]
+    TeamsFormation[Teams Formation👥]
+    CreateChallenges[Create Challenges🛠️]
+    AdvertiseEvent[Advertise Event📰]
 
 
     %%Node Connection
     
-    PC-->FA
-    FA-->PD[Compile proposal documentation📝]
-    PD-->PO{Parent Organisation<br>evaluates hackathon proposal}
+    ProposalCreation --> FeasibilityAnalysis
+    FeasibilityAnalysis --> ProposalDocumentation[Compile proposal documentation📝]
+    ProposalDocumentation --> ParentOrganization{Parent Organisation<br>evaluates hackathon proposal}
     %% Parent Organisation
-        PO--Approved🟢-->TF
-        PO--Rejected🔴-->PU[Update Proposal]
-    PU-->FA
-    TF-->CC
-    CC-->AE
-
+        ParentOrganization -- Approved🟢 --> TeamsFormation
+        ParentOrganization -- Rejected🔴 --> ProposalUpdate[Update Proposal]
+    ProposalUpdate --> FeasibilityAnalysis
+    TeamsFormation --> CreateChallenges
+    CreateChallenges --> AdvertiseEvent
 ```
 
 
 ### <p id="mermaid-creatingchallenges">Creating Challenges🛠️:</p>
-
 ```mermaid
 graph TB
     %%Node definition
-        CC[Create Challenge]
-        CU[Challenge Update]
-        FG[Follow Guidelines]
-        CA{Council Approval}
-        AC[Add Challenge]
-        PT[Play Test]
-        PTR{Play Test Result}
+        CreateChallenge[Create Challenge]
+        ChallengeUpdate[Challenge Update]
+        FollowGuidelines[Follow Guidelines]
+        CouncilApproval{Council Approval}
+        AddChallenge[Add Challenge]
+        PlayTest[Play Test]
+        PlayTestResult{Play Test Result}
 
-    CC[Create a new Challenge]-->FG[Apply predefined rules<br>on challenge creation]
-    FG-->CA{The Council<br>evaluates the Challenge}
+    CreateChallenge[Create a new Challenge]-->FollowGuidelines[Apply predefined rules<br>on challenge creation]
+    FollowGuidelines-->CouncilApproval{The Council<br>evaluates the Challenge}
 
     %%Challenge Acceptance
-        CA--Accepted🟢--->PT
-        CA--Rejected🔴-->CC
-        CA--Changes Needed🟡-->CU[Update the Challenge]
-        CU-->FG
+        CouncilApproval --> |Accepted🟢| PlayTest
+        CouncilApproval --> |Rejected🔴| CreateChallenge
+        CouncilApproval --> |Changes Needed🟡| ChallengeUpdate[Update the Challenge]
     
+    ChallengeUpdate --> FollowGuidelines
     %%Play Test
-    PT[A diverse play testers<br>play tests the challenge]-->PTR{Result of Play Test}
-    PTR--Positive🟢-->AC
-    PTR--Negative🔴-->CA
+        PlayTest[A diverse play testers<br>play tests the challenge] --> PlayTestResult{Result of Play Test}
+        PlayTestResult --> |Positive🟢| AddChallenge
+        PlayTestResult --> |Negative🔴| CouncilApproval
 
 ```
 
